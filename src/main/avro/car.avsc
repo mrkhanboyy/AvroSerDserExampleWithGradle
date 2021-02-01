@@ -1,0 +1,43 @@
+{
+  "name": "Car",
+  "type": "record",
+  "namespace": "com.avro.model",
+  "fields": [
+    {
+      "name": "brandName",
+      "type": "string"
+    },
+    {
+      "name": "regNo",
+      "type": "string"
+    },
+//    {
+//      "name": "modelNo",
+//      "type": [
+//        "null",
+//        "string"
+//      ],
+//      "default": null
+//    },
+    {
+      "name": "chasisNo",
+      "type": "string"
+    },
+    {
+      "name": "numberOfWheels",
+      "type": "int"
+    },
+    {
+      "name": "currentSpeed",
+      "type": "double"
+    },
+    {
+      "name": "price",
+      "type": "long"
+    },
+    {
+      "name": "isLatestModel",
+      "type": "boolean"
+    }
+  ]
+}

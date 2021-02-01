@@ -1,0 +1,39 @@
+plugins {
+    id 'java'
+    id 'org.jetbrains.kotlin.jvm' version '1.4.10'
+//    id "com.commercehub.gradle.plugin.avro" version "0.9.1"
+}
+
+sourceCompatibility = 1.8
+
+group 'org.fretron.avroWithGradle'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    jcenter()
+    google()
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib"
+
+//    // https://mvnrepository.com/artifact/org.apache.avro/avro
+    compile group: 'org.apache.avro', name: 'avro', version: '1.10.0'
+
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+//
+}
+
+test {
+    useJUnitPlatform()
+}
+//task generateAvro(type: com.commercehub.gradle.plugin.avro.GenerateAvroJavaTask) {
+//    //point plugin to folder with avro schemas
+//    source("src/main/avro")
+//    //point plugin to folder with generated POJOs
+//    outputDir = file("src/main/java/")
+//}
+//compileJava.source(generateAvro.outputs)

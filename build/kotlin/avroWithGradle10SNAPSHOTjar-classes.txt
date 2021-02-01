@@ -1,0 +1,1 @@
+/home/rizwan/Desktop/Assignments_Fretron/avroWithGradle/build/classes/java/main/User$1.class:/home/rizwan/Desktop/Assignments_Fretron/avroWithGradle/build/classes/java/main/User$Builder.class:/home/rizwan/Desktop/Assignments_Fretron/avroWithGradle/build/classes/java/main/User.class
